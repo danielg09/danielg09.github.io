@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f50057;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/*Header*/
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95)),
+    url("bg.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.welcome-section {
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+
+.welcome-section h1 {
+  font-size: 5rem;
+  color: #f50057;
+}
+
+.welcome-section h2 {
+  font-size: 3rem;
+}
+
+.welcome-section p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.scroll-down {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f50057;
+  border-radius: 50%;
+  position: relative;
+}
+
+.scroll-down::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f063";
+  display: inline-block;
+  font-weight: 900;
+  color: #f50057;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.bounce {
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation: bounce 3.6s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  5.55556% {
+    transform: translateY(0);
+  }
+  11.11111% {
+    transform: translateY(0);
+  }
+  22.22222% {
+    transform: translateY(15px);
+  }
+  27.77778% {
+    transform: translateY(0);
+  }
+  33.33333% {
+    transform: translateY(15px);
+  }
+  44.44444% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+/*About me*/
+
+.about-me-description {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.about-me-description p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.about-me-img img {
+  width: 100%;
+}
+
+/*my projects section*/
+.my-projects-section{
+  background-color: rgba(16, 29, 44, 0.95);
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-cover img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-content{
+  color: white;
+  text-transform: uppercase;
+}
+
+.badges{
+  margin-top: 10px;
+}
+
+.badge{
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.badge-html{
+  background-color: #ff8533;
+}
+
+.badge-css{
+  background-color: #3385ff;
+}
+
+.badge-javascript{
+  background-color: #ffff33;
+  color: black;
+}
+
+.badge-bootstrap{
+  background-color: #7952b3;
+  color: white;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content{
+  width: 100%;
+}
+
+.close{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
