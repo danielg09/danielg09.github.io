@@ -139,17 +139,17 @@ header {
   text-align: center;
 }
 
-.container{
+.projects-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .card{
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 }
 
 .card-cover img{
@@ -315,4 +315,90 @@ footer{
 
 .copy-right{
   font-size: 12px;
+}
+
+/*media queries*/
+
+@media (min-width: 576px) { 
+
+
+
+}
+
+@media (min-width: 768px) { 
+
+  /*about me section*/
+  .about-me-section{
+    padding: 2rem;
+    flex-direction: row;
+  }
+  .about-me-description{
+    text-align: left;
+    letter-spacing: normal;
+    line-height: normal;
+    width: 100%;
+  }
+
+  /*projects section*/
+
+  .projects-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card{
+    margin: 0 10px;
+  }
+
+  .modal-content{
+    width: 90%;
+  }
+
+  /*skills section*/
+
+  .container-progress-bar{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .progress-bar-desc{
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .progress-bar{
+    width: 100%;
+    height: 15px;
+  }
+
+  .bar{
+    height: 15px;
+  }
+
+}
+
+@media (min-width: 1200px) { 
+
+  /*general css*/
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+
+  /*about me section*/
+
+  .about-me-section{
+    padding: 5rem;
+    height: 100vh;
+  }
+
+  .about-me-description{
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+  
+
 }
