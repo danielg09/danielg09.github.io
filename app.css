@@ -11,17 +11,16 @@ html {
 
 section {
   width: 100%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  padding: 2rem;
 }
 
-h2 {
+.heading h2 {
   font-size: 2rem;
   color: #f50057;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin: .5rem;
+  padding: .5rem;
+  text-align: center;
 }
 
 body{
@@ -43,7 +42,6 @@ header {
 }
 
 .welcome-section {
-  /*font-family: "Poppins";*/
   color: white;
   text-align: center;
   margin: 1rem 0;
@@ -57,6 +55,9 @@ header {
 
 .welcome-section h2 {
   font-size: 3rem;
+  color: #f50057;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .welcome-section p {
@@ -123,10 +124,16 @@ header {
 
 /*About me*/
 
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-me-description{
+  text-align: center;
   font-size: 1rem;
-  letter-spacing: 1px;
-  line-height: 20px;
 }
 
 .about-me-img img {
@@ -164,12 +171,17 @@ header {
 
 .badges{
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .badge{
   font-size: 12px;
   padding: 5px;
   border-radius: 5px;
+  margin: 2px;
 }
 
 .badge-html{
@@ -219,11 +231,20 @@ header {
 
 /*skills-section*/
 
+.skill-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .container-progress-bar{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.progress-bar-desc{
+  text-align: center;
 }
 
 .progress-item{
@@ -321,35 +342,36 @@ footer{
 
 @media (min-width: 576px) { 
 
-
+  /*general css*/
+  
 
 }
 
 @media (min-width: 768px) { 
 
-  /*about me section*/
-  .about-me-section{
-    padding: 2rem;
+  /*general css*/
+  .about-container{
     flex-direction: row;
   }
+
+  /*about me section*/
   .about-me-description{
-    text-align: left;
-    letter-spacing: normal;
-    line-height: normal;
+    text-align: justify;
     width: 100%;
   }
 
   /*projects section*/
 
   .projects-container{
-    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .card{
-    margin: 0 10px;
+    width: 250px;
+    margin: 10px 10px;
   }
-
+  /*image*/  
   .modal-content{
     width: 90%;
   }
@@ -381,24 +403,31 @@ footer{
 
   /*general css*/
 
-  h2 {
+  .heading h2{
     font-size: 3rem;
-    margin-bottom: 2rem;
   }
-
-
+  
   /*about me section*/
 
-  .about-me-section{
-    padding: 5rem;
-    height: 100vh;
+  .about-me-description .heading h2{
+    text-align: justify;
   }
 
   .about-me-description{
     font-size: 20px;
-    letter-spacing: normal;
-    line-height: normal;
+
   }
+
+    /*projects section*/
+  
+    .card{
+      width: 400px;
+      margin: 10px 10px;
+    }
+    /*image*/  
+    .modal-content{
+      width: 80%;
+    }
   
 
 }
