@@ -408,6 +408,9 @@ footer{
   }
   
   /*about me section*/
+  .about-me-section{
+    min-height: 100vh;
+  }
 
   .about-me-description .heading h2{
     text-align: justify;
