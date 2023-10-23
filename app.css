@@ -9,6 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/*estilos iniciales*/
+
 section {
   width: 100%;
   padding: 2rem;
@@ -31,96 +33,48 @@ body{
 header {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95)),
-    url("bg.jpg") center no-repeat;
-  background-size: cover;
+}
+
+nav{
+  background-color: #fff;
+  width: 100%;
+  height: 90px;
+  padding: 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
 }
 
-.welcome-section {
-  color: white;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-
-.welcome-section h1 {
-  font-size: 5rem;
-  color: #f50057;
-}
-
-.welcome-section h2 {
-  font-size: 3rem;
-  color: #f50057;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.welcome-section p {
+.logo-nav{
+  color: #130B43;
+  border: 1.5px solid #130B43;
+  border-radius: 7px;
+  padding: 5px 8px;
   font-size: 1.5rem;
-  font-style: italic;
+  font-weight: 500;
 }
 
-.scroll-down {
-  width: 50px;
-  height: 50px;
-  border: 3px solid #f50057;
-  border-radius: 50%;
-  position: relative;
+.nav-list{
+  list-style: none;
+  display: none;
 }
 
-.scroll-down::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f063";
-  display: inline-block;
-  font-weight: 900;
-  color: #f50057;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
+.hamburger{
+  display: block;
+  cursor: pointer;
 }
 
-.bounce {
-  animation-iteration-count: infinite;
-  animation-duration: 1.5s;
-  animation: bounce 3.6s ease infinite;
-  transform-origin: 50% 50%;
+.hamburger-item{
+  width: 30px;
+  height: 3px;
+  background-color: #130B43;
+  margin: 7px 0;
+  /*transition: all 0.3s ease;*/
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  5.55556% {
-    transform: translateY(0);
-  }
-  11.11111% {
-    transform: translateY(0);
-  }
-  22.22222% {
-    transform: translateY(15px);
-  }
-  27.77778% {
-    transform: translateY(0);
-  }
-  33.33333% {
-    transform: translateY(15px);
-  }
-  44.44444% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.welcome-section{
+  text-align: center;
 }
-
-
 
 /*About me*/
 
