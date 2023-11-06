@@ -1,3 +1,11 @@
+const hamburger = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav-list");
+
+hamburger.addEventListener('click', (e) =>{
+    navList.style.display = "flex";
+    hamburger.classList.toggle("toggle");
+});
+
 const images = document.querySelectorAll(".card-image");
 const modal = document.querySelector('.modal');
 const modalImage = document.querySelector('#modal-img');
