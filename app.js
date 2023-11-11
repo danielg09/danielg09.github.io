@@ -2,7 +2,17 @@ const hamburger = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav-list");
 
 hamburger.addEventListener('click', (e) =>{
-    navList.style.display = "flex";
+    
+    let listaClases = Array.from(hamburger.classList);
+
+    if(!listaClases.includes("toggle"))
+    {
+        navList.style.display = "flex";
+    }
+    else
+    {
+        navList.style.display = "none";
+    }
     hamburger.classList.toggle("toggle");
 });
 
